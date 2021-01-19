@@ -227,7 +227,7 @@ RaspberryPi.prototype = {
 
 		const that = this;
 		
-		exec('shutdown -h now', function (error, stdout, stderr) {
+		exec('sudo poweroff', function (error, stdout, stderr) {
 			if (error) {
 				logger(error);
 			} else {
